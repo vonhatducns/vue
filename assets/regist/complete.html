@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"  content="width=750">
+<title>新規登録 | パストラーレチケットサイト</title>
+
+<!-- jQuery CDN -->
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<!-- jQuery CDN end -->
+<!-- Responsive Head Menu -->
+<script>
+$(function() {
+    $('.menu-trigger').click(function(){
+        $('header').toggleClass('action');
+    });
+});
+	
+$(document).ready(function() {
+  var pagetop = $('.page_top');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
+<!-- Responsive Head Menu end -->
+
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/form.css" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- HEADER -->
+<div id="HeadWrap">
+	<header id="Header">
+		<div id="HeaderLeft">
+			<section id="Headlogo"><a href="../index.html"><img src="../img/headlogo.png" width="267" height="46" alt=""/></a></section>
+		</div>
+		<div id="HeaderRight">
+			<section id="Headsearch">
+				<!-- 検索窓 -->
+				<form action="">
+					<input type="text" id="Headinput" placeholder="公演名・アーティスト名で検索">
+					<button id="sbtn" type="submit"><i class="fas fa-search"></i></button>
+				</form>
+				<!-- /検索窓 -->
+				<div id="soptxt"><a href="../search/index.html">こだわり検索&gt;&gt;</a></div>
+			</section>
+			<nav id="Headmenupre">
+				<ul id="TmenuGR">
+					<li class="tmenu"><a href="../index.html">公演一覧</a></li>
+					<li class="tmenu select"><a href="../regist/index.html">新規登録</a></li>
+					<li class="tmenu"><a href="../guide/index.html">ご利用ガイド</a></li>
+					<li class="tmenu"><a href="../information/index.html">お知らせ</a></li>
+					<li class="tlogin"><a href="../login.html"><i class="fas fa-power-off"></i>&nbsp;ログイン</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</div>
+<!-- HEADER end -->
+
+<div id="MainC">
+<!-- Main Contents -->
+	<main id="ContentsPane">
+		<h1><span id="Pagetitle">新規登録（完了）</span></h1>
+		<div id="SingleContents">
+			
+			<p>ご登録されたメールアドレスに、確認メールが送信されました。<br>
+			ご確認のうえ、メールに記載のリンクをクリックする事により登録は完了です。</p>
+		</div>
+	</main>
+<!-- Main Contents end -->
+</div>
+	
+
+<!-- FOOTER -->
+<div id="Footer">
+	<ul id="FooterMenu">
+		<li><a href="../information/index.html">お知らせ</a></li>
+		<li><a href="../help/index.html">ヘルプ</a></li>
+		<li><a href="../privacy/index.html">個人情報保護法に基づく表記</a></li>
+		<li><a href="https://pastorale.jp/" target="_blank">運営会社</a></li>
+	</ul>
+	<p>Copyright c PASTORALE CO., LTD.</p>
+
+</div>
+<!-- FOOTER end -->
+	
+<!-- Mobile Menu Responsive -->
+<section id="Drawer">
+	<header>
+		<section>
+		<a class="menu-trigger" href="#">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</a>
+		</section>
+	  <nav id="mobile-nav">
+		  <ul>
+			  <li><a href="../index.html">公演一覧</a></li>
+				<li>新規登録</li>
+				<li><a href="../guide/index.html">ご利用ガイド</a></li>
+				<li><a href="../information/index.html">お知らせ</a></li>
+				<li><a href="../search/index.html">公演検索</a></li>
+				<li><a href="../login.html">ログイン</a></li>
+		</ul>
+	  </nav>
+	</header>
+</section>
+<!-- Mobile Menu Responsive -->
+	<div class="page_top"><a href="#HeadWrap"><i class="fas fa-chevron-circle-up scrollup"></i></a></div>
+</body>
+</html>

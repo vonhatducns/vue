@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"  content="width=650">
+<title>ログイン | パストラーレチケットサイト</title>
+
+<!-- jQuery CDN -->
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<!-- jQuery CDN end -->
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/login.css" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="LoginOuterWrap">
+	<header id="LoginLogo"><a href="index.html"><img src="../assets/img/headlogo.png" width="267" height="46" alt="パストラーレチケット予約システム"/></a></header>
+<main id="Login">
+	<div id="LoginWrap">
+		<h1>ログイン</h1>
+        	 <form action="post">
+				<p>ユーザ名<span class="error">ユーザ名が見つかりません</span></p>
+				<p class="username"><input type="user" name="user" />
+				</p>
+				<p>パスワード<span class="error">パスワードが間違っています</span></p>
+				<p class="password"><input type="password" name="pass" /></p>
+				<p class="check"><input type="checkbox" name="checkbox" />ログインしたままにする</p>
+			   <p class="submit"><input type="submit" value="ログイン" /></p>
+			</form>
+		<div class="loginMisc"><a href="regist/index.html">新規登録</a> | <a href="rimainder.html">パスワードを忘れた場合</a></div>
+	</div>
+</main>
+
+<!-- FOOTER -->
+<div id="Footer">
+	<ul id="FooterMenu">
+		<li><a href="information/index.html">お知らせ</a></li>
+		<li><a href="help/index.html">ヘルプ</a></li>
+		<li><a href="privacy/index.html">個人情報保護法に基づく表記</a></li>
+		<li><a href="https://pastorale.jp/" target="_blank">運営会社</a></li>
+	</ul>
+	<p>Copyright c PASTORALE CO., LTD.</p>
+
+</div>
+<!-- FOOTER end -->
+	<div class="page_top"><a href="#HeadWrap"><i class="fas fa-chevron-circle-up scrollup"></i></a></div>
+</div>
+</body>
+</html>

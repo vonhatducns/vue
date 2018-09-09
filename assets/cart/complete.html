@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"  content="width=750">
+<title>チケットカート | パストラーレチケットサイト</title>
+
+<!-- jQuery CDN -->
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<!-- jQuery CDN end -->
+<!-- Responsive Head Menu -->
+<script>
+$(function() {
+    $('.menu-trigger').click(function(){
+        $('header').toggleClass('action');
+    });
+});
+
+$(document).ready(function() {
+  var pagetop = $('.page_top');
+    $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+       } else {
+            pagetop.fadeOut();
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);
+              return false;
+   });
+});
+</script>
+<!-- Responsive Head Menu end -->
+<!-- Icon Badge -->
+<script src="../js/badge.js" language="javascript"></script>
+
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/badge.css" type="text/css">
+<link rel="stylesheet" href="../css/cart.css" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- HEADER -->
+<div id="HeadWrap">
+	<header id="Header">
+		<div id="HeaderLeft">
+			<section id="Headlogo"><a href="../index.html"><img src="../img/headlogo.png" width="267" height="46" alt=""/></a></section>
+		</div>
+		<div id="HeaderRight">
+			<section id="Headsearch">
+				<!-- 検索窓 -->
+				<form action="">
+					<input type="text" id="Headinput" placeholder="公演名・アーティスト名で検索">
+					<button id="sbtn" type="submit"><i class="fas fa-search"></i></button>
+				</form>
+				<!-- /検索窓 -->
+				<div id="soptxt"><a href="../search/index.html">こだわり検索&gt;&gt;</a></div>
+			</section>
+			<nav id="Headmenupre">
+				<ul id="TmenuGR">
+					<li class="tmenu"><a href="../index_post.html">公演一覧</a></li>
+					<li class="tmenu"><a href="../guide/index.html">ご利用ガイド</a></li>
+					<li class="tmenu"><a href="../information/index.html">お知らせ</a></li>
+					<li class="tmenu"><a href="../mypage/index.html"><i class="fas fa-user-alt"></i>マイページ</a></li>
+					<!-- バッジアイコンの数字はdata-notification-count=の数値で変化する 0の場合はidを削除 -->
+					<li class="badgeIcon"><a href="../notif.html"><i id="bell" class="fas fa-bell fa-lg" data-notification-count="1"></i></a></li>
+					<li class="badgeIcon"><a href="index.html"><i id="cartc" class="fas fa-shopping-cart fa-lg" data-notification-count="5"></i></a></li>
+					<!-- バッジアイコンens -->
+				  <li class="tlogin"><a href="../index.html"><i class="fas fa-power-off"></i>&nbsp;ログアウト</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</div>
+<!-- HEADER end -->
+
+<div id="MainC">
+<!-- Main Contents -->
+	<main class="clearfix" id="ContentsPane">
+		<h1>予約完了</h1>
+		<div class="clearfix" id="SingleContents">
+			
+			
+			
+		<!-- コンテンツペイン -->
+		
+		<section id="compCom">
+			<p>ご登録メールアドレスに確認メールをお送りいたしましたので、ご確認ください。<br>
+			確認メールはチケットが届くまで大事に保存して下さい。</p>
+			</section>
+			
+			<!--予約テーブル-->
+			<table width="100%" border="1" class="cartTable">
+				<caption>
+				予約された公演
+			  </caption>
+			  <tbody>
+				<tr>
+				  <th scope="row">予約番号</th>
+				  <td>0000000001</td>
+				</tr>
+				<tr>
+				  <th scope="row">公演名</th>
+				  <td>山田太郎バイオリンリサイタル全国ツアー</td>
+				</tr>
+				<tr>
+				  <th scope="row">公演日</th>
+				  <td>2018年6月1日（金）19：00開演（18：00開場）</td>
+				</tr>
+				<tr>
+				  <th scope="row">会場</th>
+				  <td>東京オペラシティ　コンサートホール</td>
+				</tr>
+				<tr>
+				  <th scope="row">選択中の座席</th>
+			  	  <td>
+					  SS席　1階　5列　34<br>
+				    SS席　1階　5列　35
+				</td>
+				<tr>
+				  <th scope="row">合計金額</th>
+			  	  <td>
+					 21,600円（税込）
+				</td>
+				</tr>
+				<tr>
+				  <th scope="row">お支払い方法</th>
+				  <td>クレジットカード</td>
+			    </tr>
+			  </tbody>
+			</table>
+		
+		
+		
+		</div>
+	</main>
+<!-- Main Contents end --></div>
+	
+
+<!-- FOOTER -->
+<div id="Footer">
+	<ul id="FooterMenu">
+		<li><a href="../information/index.html">お知らせ</a></li>
+		<li><a href="../help/index.html">ヘルプ</a></li>
+		<li><a href="../privacy/index.html">個人情報保護法に基づく表記</a></li>
+		<li><a href="https://pastorale.jp/" target="_blank">運営会社</a></li>
+	</ul>
+	<p>Copyright c PASTORALE CO., LTD.</p>
+
+</div>
+<!-- FOOTER end -->
+	
+<!-- Mobile Menu Responsive -->
+<section id="Drawer">
+	<header>
+		<section>
+		<a class="menu-trigger" href="#">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</a>
+		</section>
+	  <nav id="mobile-nav">
+		  <ul>
+				<li><a href="../index_post.html">公演一覧</a></li>
+				<li><a href="../guide/index.html">ご利用ガイド</a></li>
+				<li><a href="../information/index.html">お知らせ</a></li>
+				<li><a href="../search/index.html">公演検索</a></li>
+				<li><a href="../mypage/index.html">マイページ</a></li>
+				<li><a href="../notif.html">メッセージボックス</a></li>
+				<li>カートを見る</li>
+				<li><a href="../index.html">ログアウト</a></li>
+		</ul>
+	  </nav>
+	</header>
+</section>
+<!-- Mobile Menu Responsive -->
+	<div class="page_top"><a href="#HeadWrap"><i class="fas fa-chevron-circle-up scrollup"></i></a></div>
+</body>
+</html>

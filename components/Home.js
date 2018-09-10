@@ -61,13 +61,13 @@
             　</thead>
               <tbody>
                 <tr>
-                  <td class="eventTitle"><a href="detail/detail001.html"><img src="./assets/img_event/thum_event_photo01.jpg" width="80" height="60" alt="イベント"　　　　　　　　　　　　　　　　 class="eventThum"/>ダミーテキストダミーテキスト</a></td>
+                  <td class="eventTitle"><router-link to="/detail001"><img src="./assets/img_event/thum_event_photo01.jpg" width="80" height="60" alt="イベント"　 class="eventThum"/>ダミーテキストダミーテキスト></router-link></td></router-link>
                   <td class="genre"><img src="./assets/img/icon_classic.gif" width="100" height="30" alt="クラシック"/></td>
                   <td class="term">2018.7.1～2018.7.15</td>
                   <td class="controll"><a href="detail/detail001.html"><img src="./assets/img/btn_detail.gif" width="92" height="35" alt="詳細"/></a></td>
                 </tr>
                 <tr>
-                  <td class="eventTitle"><a href="detail/detail001.html">ダミーテキストダミーテキスト</a></td>
+                  <td class="eventTitle"><router-link to="/detail001">ダミーテキストダミーテキスト</router-link></td>
                   <td class="genre"><img src="./assets/img/icon_brass.gif" width="100" height="30" alt="吹奏楽"/></td>
                   <td class="term">2018.7.1～2018.7.15</td>
                   <td class="controll"><a href="detail/detail001.html"><img src="./assets/img/btn_detail.gif" width="92" height="35" alt="詳細"/></a></td>

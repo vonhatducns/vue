@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>Vuejs</title>
      <link rel="stylesheet" href="./assets/css/style.css">
-   
+   <!-- Load Vuejs Library-->
     <script type="text/javascript" src="./vue/vue.js"></script>
     <script type="text/javascript" src="./vue/vue-router.js"></script>
     <script type="text/javascript" src="./vue/axios.js"></script>
     <script type="text/javascript" src="./vue/vue-axios.min.js"></script>
+    <!-- Load Components-->
     <script  type="text/javascript" src="./components/Home.js"></script>
+    <script  type="text/javascript" src="./components/detail/Detail001.js"></script>
     <script  type="text/javascript" src="./components/register/Register.js"></script>
     <script  type="text/javascript" src="./components/register/FormLogin.js"></script>
     <script  type="text/javascript" src="./components/guide/Guide.js"></script>
@@ -20,6 +22,7 @@
     <script  type="text/javascript" src="./API/GetApi.js"></script>
     <script  type="text/javascript" src="./components/layout/Header-vue.js"></script>
     <script  type="text/javascript" src="./components/layout/Footer-vue.js"></script>
+     <!-- Load App Router-->
     <script  type="text/javascript" src="./router/Router.js"></script>
     
 </head>
@@ -32,18 +35,17 @@
 
 <!-- Your Content-->
 
-  <router-view></router-view>
+<router-view></router-view>
 
 <!-- Your Footer-->
 <Footer-vue></Footer-vue>
 </div>  
+
 <script type="text/javascript">
+<!-- Create new Vuejs Object-->
+new Vue({ el: "#root",router: router});  
+</script>
 
-new Vue({ el: "#root",router: router});
-
-        
-    
-    </script>
 </body> 
 </html>
  
